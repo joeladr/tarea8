@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Login</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+html, body, .container-table 
+{
+    height: 100%;
+}
+.container-table 
+{
+    display: table;
+}
+.vertical-center-row 
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.margin-bottom-5
+{
+	margin-bottom: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container container-table">
+    <div class="row vertical-center-row">
+        
+        <button type="button" class="btn btn-info col-md-2 col-md-offset-2 margin-bottom-5" onclick = "GoTo_Calle1()" >CALLE A</button> 
+      
+        <button type="button" class="btn btn-info col-md-2 col-md-offset-2 margin-bottom-5" onclick = "GoTo_Calle2()" >CALLE B</button> 
+
+        <button type="button" class="btn btn-success col-md-2 col-md-offset-2 margin-bottom-5" onclick = "GoTo_Admin()" >Admin</button> 
+
+    </div>
+</div>
+
+<script>
+function GoTo_Calle1()
+{
+   window.location.href = "./semaforo.html" ;
+}
+function GoTo_Calle2()
+{
+	window.location.href = "./semaforo2.html" ;
+}
+function GoTo_Admin()
+{
+	window.location.href = "./admin.html" ;
+}
+</script>
+
+</body>
+
+</html>
